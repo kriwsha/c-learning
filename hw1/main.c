@@ -62,6 +62,7 @@ int main(int argc, char** argv) {
             fseek(inputFile, i + (long)sizeof(struct CentralDirectoryFileHeader), SEEK_SET);
             fread(buffer, fileHeader.filenameLength, 1, inputFile);
             buffer[fileHeader.filenameLength] = '\0';
+            printf("file name: %s\n", buffer);
         }
     }
     printf("this is zipjpeg\n");
