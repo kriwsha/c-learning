@@ -33,6 +33,7 @@ void putToHm(HashMap* map, char* key, int value) {
         if (strcmp(entry->key, key) == 0) {
             printf("adding to existing; new value = %d\n", value);
             entry->value = value;
+            free(key);  //+2
             break;
         }
         if (entry->nextEntry == NULL) {

@@ -10,7 +10,6 @@ static const int null = -1;
 typedef struct  {
     char* key;
     int value;
-    struct NodeEntry* nextEntry;
 } NodeEntry;
 
 typedef struct {

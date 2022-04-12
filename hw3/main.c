@@ -37,6 +37,7 @@ int main(int argc, char* argv[]) {
         putToHm(hashMap, nextWord, value);
         printf("===========\n");
     }
+    fclose(inputFile);  //+1
     hashMapToString(hashMap);
     return 0;
 }
